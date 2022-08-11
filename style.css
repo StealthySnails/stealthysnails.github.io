@@ -1,0 +1,105 @@
+/* Nav Bar */
+
+.active {
+    color: white;
+}
+
+/* Items */
+
+.row {
+    height: 32px;
+}
+
+.equipCol {
+    min-width: 200px;
+    vertical-align: middle;
+}
+
+.costCol {
+    min-width: 75px;
+    vertical-align: middle;
+}
+
+.buttonCol {
+    /* width: 15px; Not good formatting...*/
+    vertical-align: middle;
+}
+
+.numCol {
+    text-align: center;
+}
+
+.totalCostCol {
+    /* width: 300px; */
+    vertical-align: middle;
+}
+
+#equipment {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.button-size {
+    height: 25px;
+}
+
+/* Starving Artist Page */
+
+#budgetDisplay {
+    font-size: 32px;
+}
+
+#userBudgetDisplay {
+    width: 60px;
+    height: 25px;
+}
+
+#submitButton {
+    width: 100px;
+    height: 25px;
+}
+
+/* Item Page */
+
+#totalPriceDisplay {
+    font-size: 32px;
+    text-align: center;
+}
+
+
+
+
+
+/* Misc
+ 
+.button-size {
+    width: 50px;
+    display: inline-block;            Was commented out
+    ext-align: center;                Was commented out
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+What I tried to do to get rid of the highlight on click          This whole thing was commented out
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.item {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    border: 2px;
+}
+
+.item p {
+    vertical-align: middle;
+}
+*/

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<script src="items.js"></script>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar navbar-dark bg-dark justify-content-start ">
+            <a class="nav-item px-2" href="home.html">Home</a>
+            <a class="nav-item px-2 active" href="items.html">Item Shop</a>
+            <a class="nav-item px-2" href="starving-artist.html">Starving Artist Mode</a>
+            <a class="nav-item px-2" href="photo-calculator.html">Photo Calculator</a>
+        </div>
+    </header>
+
+    <!-- Old Spirit Box
+    <div class="item">
+        <button onclick="subtractSpiritBox()" class="btn button-size">-</button>
+        <p id="spiritBoxDisplay">Spirit Box: 1</p>
+        <button onclick="addSpiritBox()" class="btn button-size">+</button>
+        <p>$50</p>
+    </div> -->
+
+    <!-- Spirit Box 
+    <div class="item">
+        <button onclick="subtract('Spirit Box')" class="btn button-size">-</button>
+        <p id="spiritBoxDisplay">Spirit Box: 1</p>
+        <button onclick="add('Spirit Box')" class="btn button-size">+</button>
+        <p id="spiritBoxPriceDisplay">$0</p>
+    </div> -->
+
+    <!-- Ghost Writing 
+    <div class="item">
+        <button onclick="subtract('Ghost Writing Book')" class="btn button-size">-</button>
+        <p id="ghostWritingDisplay">Ghost Writing Book: 1</p>
+        <button onclick="add('Ghost Writing Book')" class="btn button-size">+</button>
+        <p id="ghostWritingPriceDisplay">$0</p>
+    </div>-->
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm- equipCol">Spirit Box</div>
+            <div class="col-sm- costCol">Cost: $50</div>
+            <div class="col-xs- buttonCol" ><button onclick="subtract('Spirit Box')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="spiritBoxDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Spirit Box')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="spiritBoxPriceDisplay">Total: $0</div>
+            <div class="col-xs- buttonCol"><button onclick="addAll('Spirit Box')" class="btn button-size">Add All</button></div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Ghost Writing Book</div>
+            <div class="col-sm- costCol">Cost: $40</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Ghost Writing Book')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="ghostWritingDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Ghost Writing Book')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="ghostWritingPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">EMF Reader</div>
+            <div class="col-sm- costCol">Cost: $45</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('EMF Reader')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="emfDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('EMF Reader')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="emfPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">UV Flashlight</div>
+            <div class="col-sm- costCol">Cost: $35</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('UV Flashlight')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="uvLightDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('UV Flashlight')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="uvLightPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Video Camera</div>
+            <div class="col-sm- costCol">Cost: $50</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Video Camera')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="videoCameraDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Video Camera')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="videoCameraPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Photo Camera</div>
+            <div class="col-sm- costCol">Cost: $40</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Photo Camera')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="photoCameraDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Photo Camera')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="photoCameraPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">D.O.T.S. Projector</div>
+            <div class="col-sm- costCol">Cost: $65</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('D.O.T.S. Projector')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="dotsDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('D.O.T.S. Projector')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="dotsPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Flashlight</div>
+            <div class="col-sm- costCol">Cost: $30</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Flashlight')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="flashlightDisplay">1</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Flashlight')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="flashlightPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Candle</div>
+            <div class="col-sm- costCol">Cost: $15</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Candle')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="candleDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Candle')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="candlePriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Crucifix</div>
+            <div class="col-sm- costCol">Cost: $30</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Crucifix')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="crucifixDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Crucifix')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="crucifixPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Glowstick</div>
+            <div class="col-sm- costCol">Cost: $20</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Glowstick')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="glowstickDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Glowstick')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="glowstickPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Head Mounted Camera</div>
+            <div class="col-sm- costCol">Cost: $60</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Head Mounted Camera')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="headCamDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Head Mounted Camera')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="headCamPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Lighter</div>
+            <div class="col-sm- costCol">Cost: $10</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Lighter')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="lighterDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Lighter')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="lighterPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Motion Sensor</div>
+            <div class="col-sm- costCol">Cost: $100</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Motion Sensor')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="motionSensorDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Motion Sensor')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="motionSensorPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Parabolic Microphone</div>
+            <div class="col-sm- costCol">Cost: $50</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Parabolic Microphone')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="paraMicDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Parabolic Microphone')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="paraMicPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Salt Shaker</div>
+            <div class="col-sm- costCol">Cost: $15</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Salt Shaker')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="saltDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Salt Shaker')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="saltPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Sanity Pills</div>
+            <div class="col-sm- costCol">Cost: $45</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Sanity Pills')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="sanityPillsDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Sanity Pills')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="sanityPillsPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Smudge Sticks</div>
+            <div class="col-sm- costCol">Cost: $15</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Smudge Sticks')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="smudgeSticksDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Smudge Sticks')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="smudgeSticksPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Sound Sensor</div>
+            <div class="col-sm- costCol">Cost: $80</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Sound Sensor')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="soundSensorDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Sound Sensor')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="soundSensorPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Strong Flashlight</div>
+            <div class="col-sm- costCol">Cost: $50</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Strong Flashlight')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="strongFlashlightDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Strong Flashlight')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="strongFlashlightPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Thermometer</div>
+            <div class="col-sm- costCol">Cost: $30</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Thermometer')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="thermoDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Thermometer')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="thermoPriceDisplay">Total: $0</div>
+        </div>
+        <div class="row">
+            <div class="col-sm- equipCol">Tripod</div>
+            <div class="col-sm- costCol">Cost: $15</div>
+            <div class="col-xs- buttonCol"><button onclick="subtract('Tripod')" class="btn button-size">-</button></div>
+            <div class="col-xs-" id="tripodDisplay">0</div>
+            <div class="col-xs- buttonCol"><button onclick="add('Tripod')" class="btn button-size">+</button></div>
+            <div class="col-sm- totalCostCol" id="tripodPriceDisplay">Total: $0</div>
+        </div>
+    </div>
+
+
+    <div>
+        <p id="totalPriceDisplay">Grand Total: $0</p>
+    </div>
+    
+    <div class="col-xs- buttonCol text-center">
+        <button onclick="randomEquipment()" class="btn button-size">Random Equipment</button>
+    </div>
+
+    <div class="col-xs- buttonCol text-center">
+        <button onclick="randomEquipmentAll()" class="btn button-size">Random Equipment (Adds all)</button>
+    </div>
+
+</body>
+
+</html>

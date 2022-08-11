@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<script src="photo-calculator.js"></script>
+
+<body>
+    <!--navbar-->
+    <header>
+        <div class="navbar navbar-dark bg-dark justify-content-start">
+            <a class="nav-item  px-2" href="home.html">Home</a>
+            <a class="nav-item  px-2" href="items.html">Item Shop</a>
+            <a class="nav-item  px-2" href="starving-artist.html">Starving Artist Mode</a>
+            <a class="nav-item  px-2 active" href="photo-calculator.html">Photo Calculator</a>
+        </div>
+    </header>
+
+    <div class="text-center">
+        <div>Photo 1:
+            <select id="photo1" onchange="calcPhoto(this.id)">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo1Star">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 2:
+            <select id="photo2">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo2Star" onchange="calcPhoto('photo2', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 3:
+            <select id="photo3">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo3Star" onchange="calcPhoto('photo3', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 4:
+            <select id="photo4">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo4Star" onchange="calcPhoto('photo4', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 5:
+            <select id="photo5">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo5Star" onchange="calcPhoto('photo5', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 6:
+            <select id="photo6">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo6Star" onchange="calcPhoto('photo6', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 7:
+            <select id="photo7">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo7Star" onchange="calcPhoto('photo7', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 8:
+            <select id="photo8">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo8Star" onchange="calcPhoto('photo8', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 9:
+            <select id="photo9">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo9Star" onchange="calcPhoto('photo9', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div>Photo 10:
+            <select id="photo10">
+                <option value="blankPhoto" selected>Blank</option>
+                <option value="ghostPhoto">Ghost Photo</option>
+                <option value="bonePhoto">Bone</option>
+                <option value="cursedObjectPhoto">Cursed Object</option>
+                <option value="fingerPhoto">Fingerprints</option>
+                <option value="footprintPhoto">Footprints</option>
+                <option value="interactionPhoto">Interaction</option>
+                <option value="deadBodyPhoto">Dead Body</option>
+                <option value="dirtyWaterPhoto">Dirty Water</option>
+            </select>
+            <select id="photo10Star" onchange="calcPhoto('photo10', this.id)">
+                <option value="oneStar">One Star</option>
+                <option value="twoStar">Two Star</option>
+                <option value="threeStar" selected>Three Star</option>
+            </select>
+        </div>
+
+        <div id="photoMoney">Photo Money: $0</div>
+    </div>
+
+    <p><select  id= "1">
+        <option selected = "selected" >Select Country</option>
+        <option value="1">Albania</option>
+        <option value="2">Kosovo</option>
+        <option value="3">Germany</option>
+        </select>
+        </p>
+ 
+     <p><select  id="2">
+         <option selected = "selected" ></option></select></p>
+
+</body>
+
+</html>
