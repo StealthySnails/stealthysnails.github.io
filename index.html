@@ -12,7 +12,7 @@
     <!--navbar-->
     <header>
         <div class="navbar navbar-dark bg-dark justify-content-start">
-            <a class="nav-item  px-2 active" href="home.html">Home</a>
+            <a class="nav-item  px-2 active" href="index.html">Ghosts and Evidence</a>
             <a class="nav-item  px-2" href="items.html">Item Shop</a>
             <a class="nav-item  px-2" href="starving-artist.html">Starving Artist Mode</a>
             <a class="nav-item  px-2" href="photo-calculator.html">Photo Calculator</a>
@@ -23,7 +23,7 @@
     </header>
 
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="emf-box">
+        <input class="form-check-input" type="checkbox" value="" id="emf-box" onclick="updateEvidence()">
         <label class="form-check-label" for="flexCheckDefault">
             EMF 5
         </label>
@@ -64,5 +64,10 @@
             Spirit Box
         </label>
     </div>
+
+    <div>
+        <p id="wraithText">Wraith</p>
+    </div>
+
 </body>
 </html>
